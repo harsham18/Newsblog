@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+html{
+    box-sizing: border-box;
+}
+header{
+    margin-top: 0px;
+    display: block;
+    background-color:indigo;
+    height: 90px;
+}
+header label{
+    font-size: 20px;
+    color: indigo;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    padding: 15px 24px;
+    margin-left: 41%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+header label h6{
+    font-size: 10px;
+}
+.buttonIn {
+    width: 300px;
+    position: relative;
+}
+  
+input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 1px;
+}  
+button {
+    position: absolute;
+    top: 0;
+    border-radius: 1px;
+    width: 30%;
+    right: 1px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 38px;
+    cursor: pointer;
+    color: white;
+    background-color: #0b0b0b;
+    transform: translateX(2px);
+}
+.drop-down{
+    height: 38px;width: 18%;
+}
+.bold{
+    color:#0b0b0b;
+    height: 0.3px;
+    background-color: black;
+    position: relative;
+    margin-top: 20px;
+}
+.line{
+    display: inline;
+    width:20%;
+}
+.image-section img{
+    width: 170px;
+}
+.subscribe-section{
+    float: right;
+}
+.subscribe-section label{
+    display: block;
+    padding-bottom: 10px;
+}
+.news-head{
+    margin-left: 23%;
+    text-align: center;
+    color: indigo;
+    font-size: 24px;
+}
+.category-section{
+    margin-top: 0px;
+    padding: 8px;
+}
+.category-section label{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.blog-section{
+    width:100%;
+}
+.blog-section .section-content{
+    width:85%;
+    margin: 20px auto;
+}
+.blog-section .section-content .cards{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.blog-section .section-content .cards .card{
+    width: 100%;
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+}
+.blog-section .section-content .cards .card .article{
+    padding: 15px 20px;
+}
+.blog-section .section-content .cards .card .article h4{
+    font-size: 24px;
+    color: indigo;
+}
+.blog-section .section-content .cards .card .article p{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.blog-section .section-content .cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: orangered;
+    padding: 8px 15px;
+    margin-left: 0px;
+    color: white;
+    margin-bottom: 20px;
+}
+.image-section{
+    float: left;
+}
+.article{
+    margin-left: 165px;
+    margin-bottom: 50px;
+    position: absolute;
+}
+footer{
+    width: 100%;
+    height: 35px;
+    background-color: indigo;
+    position:relative;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    padding-top:4px;
+}
+@media  screen and (max-width:870px){
+    .blog-section .section-content .cards .card .article h4{
+        font-size: 20px;
+        color: indigo;
+    }
+    .blog-section .section-content .cards .card .article p{
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+    .news-head{
+        margin-left: 2%;
+        text-align: center;
+        color: indigo;
+        font-size: 20px;
+    }
+    input{
+        width: 50%;
+        float: right;
+    }
+    button{
+        width: 20%;
+    }
+    .subscribe-section{
+        float: right;
+    }
+    .subscribe-section label{
+        padding-left: 150px;
+    }
+}
+@media screen and (max-width:565px) {
+    .blog-section .section-content .cards .card .article h4{
+        font-size: 15px;
+        color: indigo;
+    }
+    .blog-section .section-content .cards .card .article p{
+        font-size: 8px;
+        margin: 10px 0px;
+    }
+    .news-head{
+        margin-left: 23%;
+        text-align: center;
+        color: indigo;
+        font-size:10px;
+    }
+}
